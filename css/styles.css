@@ -1280,6 +1280,7 @@ progress {
     width: 25%;
   }
   .col-lg-4 {
+    padding-top: 200px;
     flex: 0 0 auto;
     width: 33.33333333%;
   }
@@ -7964,6 +7965,7 @@ textarea.form-control-lg {
 }
 
 .fw-bolder {
+  padding-top: 100px;
   font-weight: bolder !important;
 }
 
@@ -11045,7 +11047,9 @@ html {
   background-color: black;
 }
 
-
+/*!
+* New Styles
+*/
 
 .loader {
   width: 400px;
