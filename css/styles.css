@@ -11149,3 +11149,9 @@ html {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.separator {
+  border-top: 4px dotted #4b537c; /* Ajusta el color y el grosor del borde según tus preferencias */
+  margin-top: 80px; /* Espacio entre el texto y el borde */
+  margin-bottom: 80px; /* Espacio entre el texto y el borde */
+}
