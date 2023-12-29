@@ -1280,7 +1280,6 @@ progress {
     width: 25%;
   }
   .col-lg-4 {
-    padding-top: 200px;
     flex: 0 0 auto;
     width: 33.33333333%;
   }
@@ -11059,8 +11058,8 @@ html {
   animation: right5231 0.9s linear infinite;
   }
   
-  .loader::before,
-  .loader::after {
+.loader::before,
+.loader::after {
   content: "";
   width: 120px;
   height: 120px;
@@ -11073,7 +11072,7 @@ html {
   animation: left036 0.9s linear infinite;
   }
   
-  .loader::after {
+.loader::after {
   width: 90px;
   height: 90px;
   top: calc(50% - 45px);
@@ -11083,7 +11082,7 @@ html {
   animation: none;
   }
   
-  @keyframes right5231 {
+@keyframes right5231 {
       from {
           transform: rotate(0deg);
       }
@@ -11093,7 +11092,7 @@ html {
       }
   }
   
-  @keyframes left036 {
+@keyframes left036 {
       from {
           transform: rotate(720deg);
       }
@@ -11102,3 +11101,31 @@ html {
           transform: rotate(0deg);
       }
   }
+
+
+
+@media (min-width: 576px) {
+  .col-lg-4-padding {
+    padding-top: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .col-lg-4-padding {
+    padding-top: 0px;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-4-padding {
+    padding-top: 230px;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-4-padding {
+    padding-top: 230px;
+  }
+}
+@media (min-width: 1400px) {
+  .col-lg-4-padding {
+    padding-top: 230px;
+  }
+}
