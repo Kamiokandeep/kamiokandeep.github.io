@@ -73,7 +73,7 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #1abc9c;
+  --bs-link-color: #495b57;
   --bs-link-hover-color: #15967d;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
@@ -11130,4 +11130,22 @@ html {
   .col-lg-4-padding {
     padding-top: 230px;
   }
+}
+
+/*!
+* Console
+*/
+
+#console {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 1000px;
+  overflow: auto;
+  white-space: normal;
+  font-family: 'Courier New', monospace;
+  color: #cfcfcf;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
