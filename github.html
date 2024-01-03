@@ -31,6 +31,8 @@
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="github.html">GitHub</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="python.html">Python</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="c_sharp.html">C#</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="html.html">HTML</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="css.html">CSS</a></li>
                     </ul>
                 </div>
             </div>
@@ -52,6 +54,8 @@
                             <a class="badge bg-secondary text-decoration-none link-light" href="github.html">GitHub</a>
                             <a class="badge bg-secondary text-decoration-none link-light" href="python.html">Python</a>
                             <a class="badge bg-secondary text-decoration-none link-light" href="c_sharp.html">C#</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="html.html">HTML</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="css.html">CSS</a>
                         </header>
                         <!-- Preview image figure-->
                         <figure class="mb-12"><img class="img-fluid rounded" src="assets/img/github.jpg" alt="..." /></figure>
@@ -154,13 +158,15 @@
                             <div class="separator"></div>
                             <p class="fs-5 mb-4, justify"><strong>Reset</strong></p>
                             <div id="console">
-                                <span>>>> </span>
+                                <span>>>> git reset tag --soft</span>
                             </div>
-                            <p class="fs-5 mb-4, justify"></p>
+                            <p class="fs-5 mb-4, justify">The command performs a "soft" reset, keeping local changes in the staging area. The branch and working directory are updated to the state of the commit referenced by the tag, but uncommitted local changes are retained so that they can be included in the next commit.</p>
                             <div id="console">
-                                <span>>>> </span>
+                                <span>>>> git reset tag --hard</span>
                             </div>
-                            <p class="fs-5 mb-4, justify"></p>                           
+                            <p class="fs-5 mb-4, justify">The current branch is reset to the state of the commit referenced by the tag. Local changes and those in the staging area are completely discarded, and the branch and working directory are updated to the state of the commit indicated by the tag.</p>                           
+                            <!-- Post Code-->
+                            <div class="separator"></div>
                         </section>
                     </article>
                 </div>
