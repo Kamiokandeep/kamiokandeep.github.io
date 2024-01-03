@@ -68,6 +68,10 @@
                             <div class="separator"></div>
                             <p class="fs-5 mb-4, justify"><strong>Settings</strong></p>
                             <div id="console">
+                                <span>>>> git config -l</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">The git config -l command displays the current Git configuration, including user information, formatting options, and other settings. It is useful for reviewing and verifying the current configuration in your Git environment.</p>
+                            <div id="console">
                                 <span>>>> git config --global user.name "User Name"</span>
                             </div>
                             <p class="fs-5 mb-4, justify">This command globally sets the username associated with commits in Git. Replace "User Name" with your Git username. It is crucial for identifying who made changes in the version history.</p>                            
@@ -165,8 +169,43 @@
                                 <span>>>> git reset tag --hard</span>
                             </div>
                             <p class="fs-5 mb-4, justify">The current branch is reset to the state of the commit referenced by the tag. Local changes and those in the staging area are completely discarded, and the branch and working directory are updated to the state of the commit indicated by the tag.</p>                           
+                            
                             <!-- Post Code-->
                             <div class="separator"></div>
+                            <p class="fs-5 mb-4, justify"><strong>Restore File</strong></p>
+                            <div id="console">
+                                <span>>>> git checkout tag file.txt</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">You can restore the specific content of a file (file.txt) to the state associated with the tag (tag). This command is useful when you want to view or revert the state of a file to a specific version identified by the tag in the repository's history.</p>
+                            <p class="fs-5 mb-4, justify">In summary</p>
+                            <div id="console">
+                                <span>>>> git log file.txt</span><br>
+                                <span>>>> git checkout tag file.txt</span><br>
+                                <span>>>> git add file.txt</span><br>
+                                <span>>>> git commit -m 'msg'</span><br>
+                                <span>>>> </span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">In summary, git checkout tag file.txt will restore the file in your working directory, and then you need to use git add and git commit to include those changes in the staging area and make a new commit, respectively.</p>                                    
+
+                            <!-- Post Code-->
+                            <div class="separator"></div>
+                            <p class="fs-5 mb-4, justify"><strong>Branches</strong></p>
+                            <div id="console">
+                                <span>>>> git branch</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">The git branch command displays a list of all branches in your local repository. The current branch is highlighted with an asterisk (*). It is useful for identifying existing branches and determining which branch you are currently on.</p>
+                            <div id="console">
+                                <span>>>> git branch "new_branch_name"</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">The git branch "new_branch_name" command is used to create a new branch in Git with the specified name. However, creating the branch does not change your current position; you remain in the current branch.</p>
+                            <div id="console">
+                                <span>>>> git checkout "new_branch_name"</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">Using the git checkout "new_branch_name" command, you switch your position to the specified new branch. Now, you will be working on that branch, and any changes you make will apply to that branch instead of the current branch.</p>
+                            
+                            <!-- Post Code-->
+                            <div class="separator"></div>
+
                         </section>
                     </article>
                 </div>
