@@ -7667,6 +7667,10 @@ textarea.form-control-lg {
   margin-bottom: 1.5rem !important;
 }
 
+.justify {
+  text-align: justify;
+}
+
 .mb-5 {
   margin-bottom: 3rem !important;
 }
@@ -11140,7 +11144,6 @@ html {
   background-color: #1e1e1e;
   border-radius: 8px;
   width: 100%;
-  max-width: 1000px;
   overflow: auto;
   white-space: normal;
   font-family: 'Courier New', monospace;
@@ -11152,6 +11155,6 @@ html {
 
 .separator {
   border-top: 4px dotted #4b537c; /* Ajusta el color y el grosor del borde según tus preferencias */
-  margin-top: 80px; /* Espacio entre el texto y el borde */
-  margin-bottom: 80px; /* Espacio entre el texto y el borde */
+  margin-top: 40px; /* Espacio entre el texto y el borde */
+  margin-bottom: 40px; /* Espacio entre el texto y el borde */
 }

@@ -39,7 +39,7 @@
         <!-- Page content-->
         <div class="container mt-5">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     <!-- Post content-->
                     <article>
                         <!-- Post header-->
@@ -54,20 +54,20 @@
                             <a class="badge bg-secondary text-decoration-none link-light" href="c_sharp.html">C#</a>
                         </header>
                         <!-- Preview image figure-->
-                        <figure class="mb-4"><img class="img-fluid rounded" src="assets/img/github.jpg" alt="..." /></figure>
+                        <figure class="mb-12"><img class="img-fluid rounded" src="assets/img/github.jpg" alt="..." /></figure>
                         <!-- Post content-->
-                        <section class="mb-5">
-                            <p class="fs-5 mb-4">GitHub, an essential platform in software development, utilizes the Git version control system to facilitate collaboration among developers. By providing repositories to store projects, GitHub enables precise tracking of changes and streamlines the integration of contributions through pull requests.</p>
-                            <p class="fs-5 mb-4">In addition to features like issues and wikis, GitHub stands out for its automation capabilities with actions. This platform has evolved to become a comprehensive hub fostering transparency and community in software development.</p>
+                        <section class="mb-12">
+                            <p class="fs-5 mb-4, justify">GitHub, an essential platform in software development, utilizes the Git version control system to facilitate collaboration among developers. By providing repositories to store projects, GitHub enables precise tracking of changes and streamlines the integration of contributions through pull requests.</p>
+                            <p class="fs-5 mb-4, justify">In addition to features like issues and wikis, GitHub stands out for its automation capabilities with actions. This platform has evolved to become a comprehensive hub fostering transparency and community in software development.</p>
                             <!-- Post Code-->
                             <div id="console">
                                 <span>>>> git config --global user.name "User Name"</span>
                             </div>
-                            <p class="fs-5 mb-4">This command globally sets the username associated with commits in Git. Replace "User Name" with your Git username. It is crucial for identifying who made changes in the version history.</p>                            
+                            <p class="fs-5 mb-4, justify">This command globally sets the username associated with commits in Git. Replace "User Name" with your Git username. It is crucial for identifying who made changes in the version history.</p>                            
                             <div id="console">
                                 <span>>>> git config --global user.email "User Email"</span>
                             </div>
-                            <p class="fs-5 mb-4">This command globally configures the email address associated with commits in Git. Replace "User Email" with your email address linked to your Git account. It is essential for author identification in the version history.</p>
+                            <p class="fs-5 mb-4, justify">This command globally configures the email address associated with commits in Git. Replace "User Email" with your email address linked to your Git account. It is essential for author identification in the version history.</p>
 
                             <!-- Post Code-->
                             <div class="separator"></div>                            
@@ -75,32 +75,32 @@
                             <div id="console">
                                 <span>>>> git init</span>
                             </div>
-                            <p class="fs-5 mb-4">Initializes a new Git repository in the current directory.</p>
+                            <p class="fs-5 mb-4, justify">Initializes a new Git repository in the current directory.</p>
                             <div id="console">
                                 <span>>>> git add file.txt</span>
                             </div>
-                            <p class="fs-5 mb-4">Adds the specified file to the staging area to be included in the next commit.</p>
+                            <p class="fs-5 mb-4, justify">Adds the specified file to the staging area to be included in the next commit.</p>
                             <div id="console">
                                 <span>>>> git add *</span>
                             </div>
-                            <p class="fs-5 mb-4">Adds all files in the current directory to the staging area.</p>
+                            <p class="fs-5 mb-4, justify">Adds all files in the current directory to the staging area.</p>
                             <div id="console">
                                 <span>>>> git commit -m "msg"</span>
                             </div>
-                            <p class="fs-5 mb-4">Commits changes with a descriptive message.</p>
+                            <p class="fs-5 mb-4, justify">Commits changes with a descriptive message.</p>
                             <div id="console">
                                 <span>>>> git status</span>
                             </div>
-                            <p class="fs-5 mb-4">Shows the current status of files in the repository, highlighting pending changes.</p>
+                            <p class="fs-5 mb-4, justify">Shows the current status of files in the repository, highlighting pending changes.</p>
                             <div id="console">
                                 <span>>>> git pull</span>
                             </div>
-                            <p class="fs-5 mb-4">Fetches the latest changes from the remote repository and merges them into the local repository.</p>                            
+                            <p class="fs-5 mb-4, justify">Fetches the latest changes from the remote repository and merges them into the local repository.</p>                            
                             <div id="console">
                                 <span>>>> git push</span>
                             </div>
-                            <p class="fs-5 mb-4">Pushes local changes to the remote repository.</p>
-                            <p class="fs-5 mb-4">In summary</p>
+                            <p class="fs-5 mb-4, justify">Pushes local changes to the remote repository.</p>
+                            <p class="fs-5 mb-4, justify">In summary</p>
                             <div id="console">
                                 <span>>>> git init</span><br>
                                 <span>>>> git add file.txt</span><br>
@@ -110,27 +110,27 @@
                             </div>
                             <!-- Post Code-->
                             <div class="separator"></div>
-                            <p class="fs-5 mb-4">Instructions that display a detailed commit history, these are essential for understanding and collaborating efficiently in software development.</p>
+                            <p class="fs-5 mb-4, justify">Instructions that display a detailed commit history, these are essential for understanding and collaborating efficiently in software development.</p>
                             <div id="console">
                                 <span>>>> git log file.txt</span>
                             </div>
-                            <p class="fs-5 mb-4">Shows the commit history specifically for the specified file.</p>
+                            <p class="fs-5 mb-4, justify">Shows the commit history specifically for the specified file.</p>
                             <div id="console">
                                 <span>>>> gitk</span>
                             </div>
-                            <p class="fs-5 mb-4">Is a graphical interface for visualizing the commit history and branches in Git.</p>
+                            <p class="fs-5 mb-4, justify">Is a graphical interface for visualizing the commit history and branches in Git.</p>
                             <!-- Post Code-->
                             <div class="separator"></div>
-                            <p class="fs-5 mb-4">Now, if you want to delete a file that is in the staging area...</p>
+                            <p class="fs-5 mb-4, justify">Now, if you want to delete a file that is in the staging area...</p>
                             <div id="console">
                                 <span>>>> git rm file.txt</span>
                             </div>
-                            <p class="fs-5 mb-4">Remove a file from both the working directory and the staging area simultaneously. This means the file will be deleted both locally and in the next commit.</p>
+                            <p class="fs-5 mb-4, justify">Remove a file from both the working directory and the staging area simultaneously. This means the file will be deleted both locally and in the next commit.</p>
                             <div id="console">
                                 <span>>>> git rm --cached file.txt</span>
                             </div>
-                            <p class="fs-5 mb-4">Removes the file from the staging area but keeps it in the working directory. This indicates that the file will be deleted from version control tracking but will remain in your local file system.</p>
-                            <p class="fs-5 mb-4">In summary</p>
+                            <p class="fs-5 mb-4, justify">Removes the file from the staging area but keeps it in the working directory. This indicates that the file will be deleted from version control tracking but will remain in your local file system.</p>
+                            <p class="fs-5 mb-4, justify">In summary</p>
                             <div id="console">
                                 <span>>>> git add file.txt</span><br>
                                 <span>>>> git status</span><br>
@@ -141,14 +141,6 @@
                             <div class="separator"></div>
                         </section>
                     </article>
-                </div>
-                <!-- Side widgets-->
-                <div class="col-lg-4 col-lg-4-padding">
-                    <!-- Side widget-->
-                    <div class="card mb-4">
-                        <div class="card-header">About</div>
-                        <div class="card-body">Passionate about software development and enthusiastic about creatively solving problems.</div>
-                    </div>
                 </div>
             </div>
         </div>
