@@ -147,6 +147,11 @@
                                 <span>>>> git show file.txt</span>
                             </div>
                             <p class="fs-5 mb-4, justify">The command displays detailed information about changes made to a specific file. It provides the content of the file in the most recent commit that affected it, along with metadata such as the author, date, and commit message. It is useful for reviewing changes and understanding the evolution of a file in the version history.</p>
+                            
+                            <div id="console">
+                                <span>>>> git log --all --graph --decorate --oneline</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">The git log --all --graph --decorate --oneline command displays a condensed and graphical history of all commits across all branches. The --graph option visualizes the branch structure, --decorate adds tags and branch names to the output, and --oneline shows each commit on a single line.</p>
                             <div id="console">
                                 <span>>>> git diff tag_1 tag_2</span>
                             </div>
@@ -215,6 +220,108 @@
                             </div>
                             <p class="fs-5 mb-4, justify">Using the git checkout "new_branch_name" command, you switch your position to the specified new branch. Now, you will be working on that branch, and any changes you make will apply to that branch instead of the current branch.</p>
                             
+                            <!-- Post Code-->
+                            <div class="separator"></div>
+                            <p class="fs-5 mb-4, justify"><strong>Tags or Versions</strong></p>
+                            <div id="console">
+                                <span>>>> git tag -a V1 -m "msg"</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">Using git tag -a V1 -m "msg", a new tag (V1) is created and associated with the current commit. The -a option allows adding additional information, such as a descriptive message for the tag.</p>
+                            <div id="console">
+                                <span>>>> git tag</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify"> The git tag command displays a list of all existing tags in the repository. Tags are specific points in history marked for easy reference.</p>
+                            <div id="console">
+                                <span>>>> git show-ref --tags</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify"> git show-ref --tags provides a list of commits associated with tags in the repository. It shows commit hashes alongside the corresponding tags.</p>
+                            <div id="console">
+                                <span>>>> git push origin --tags</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">Using git push origin --tags, all local tags are pushed to the remote repository (origin). This ensures that local tags are available to other collaborators on the project.</p>
+                            <div id="console">
+                                <span>>>> git tag -d V1</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">The git tag -d V1 command locally deletes the tag named V1. This won't affect the remote repository, so if you want to delete the tag remotely, you should also execute git push origin :refs/tags/V1.</p>
+                            <div id="console">
+                                <span>>>> git push origin :refs/tags/V1</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">git push origin :refs/tags/V1 deletes the V1 tag from the remote repository (origin). This command sends a null reference (:refs/tags/V1) to the remote repository, effectively deleting the tag.</p>
+
+                            <!-- Post Code-->
+                            <div class="separator"></div>
+                            <p class="fs-5 mb-4, justify"><strong>Local Repository to Github</strong></p>
+                            <div id="console">
+                                <span>>>> git remote add origin HTTPS</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">git remote add origin HTTPS sets the URL of the remote repository (typically named "origin") using the HTTPS protocol. This informs Git of the location of the remote repository, allowing you to send and receive changes.</p>
+                            <div id="console">
+                                <span>>>> git remote -v</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">git remote -v displays the URLs of the remote repositories linked to the local repository. This provides information about the locations from and to which you can send and receive changes.</p>
+                            <div id="console">
+                                <span>>>> git pull origin main --allow-unrelated-histories</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">git pull origin main --allow-unrelated-histories merges the remote branch main into the current local branch, even if they have unrelated histories. This option is useful when combining two separate development histories.</p>
+                            <div id="console">
+                                <span>>>> git pull origin main</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">git pull origin main performs a pull operation from the remote branch main and merges the changes into the current local branch. This ensures that the local branch is updated with the latest changes from the remote branch.</p>
+                            <div id="console">
+                                <span>>>> git push origin main</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">git push origin main sends the changes from the local branch main to the remote repository named origin. This is commonly used to share local changes with other collaborators on the project.</p>
+
+                            <!-- Post Code-->
+                            <div class="separator"></div>
+                            <p class="fs-5 mb-4, justify"><strong>Clone</strong></p>
+                            <div id="console">
+                                <span>>>> git clone URL</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">git clone URL creates a local copy of a remote repository at the location specified by the URL. This automatically sets up the new directory as a complete Git repository with tracking of the remote repository's default branch.</p>
+
+                            <!-- Post Code-->
+                            <div class="separator"></div>
+                            <p class="fs-5 mb-4, justify"><strong>Fork</strong></p>
+                            <p class="fs-5 mb-4, justify"><strong>"Forking"</strong> in version control systems like Git refers to the creation of an independent copy of an existing repository. It is commonly used on collaborative development platforms such as GitHub or GitLab. Here's a more detailed explanation:</p>
+                            <p class="fs-5 mb-4, justify"><strong>Forking on GitHub/GitLab:</strong></p>
+                            <p class="fs-5 mb-4, justify"><strong>Creating a Copy: </strong>When you "fork" a repository on platforms like GitHub or GitLab, you are creating an exact copy of that repository in your personal account. This copy is hosted on your profile and becomes an independent repository.</p>
+                            <p class="fs-5 mb-4, justify"><strong>Independence from the Original Repository: </strong>Forking creates a clear separation between the original repository and your copy. Although the fork initially mirrors the current state of the original repository, the two evolve independently after the fork.</p>
+                            <p class="fs-5 mb-4, justify"><strong>Decentralized Collaboration: </strong>You can make changes to your forked repository as needed. This is useful if you want to contribute to a project but don't have direct write permissions to the original repository.</p>
+                            <p class="fs-5 mb-4, justify"><strong>Pull Requests: </strong>After making changes in your forked repository, you can send a pull request to the original repository. A pull request is a proposal to merge your changes into the original repository. Owners of the original repository can review your changes and decide whether to accept or reject them.</p>
+                            <p class="fs-5 mb-4, justify"><strong>Contributing to Open Source Projects: </strong>Forking is particularly valuable in open-source projects where anyone can contribute. Developers can fork a project, make enhancements or fixes in their fork, and then request that their changes be integrated into the main project through pull requests.</p>
+                            <p class="fs-5 mb-4, justify"><strong>Summary: </strong>The act of "forking" provides a powerful mechanism for contributing to open-source projects and collaborating in a decentralized manner. It allows developers to work independently on their own versions of a project and facilitates the integration of improvements and contributions into the main project through pull requests.</p>
+                            <p class="fs-5 mb-4, justify"><strong></strong></p>
+
+                            <p class="fs-5 mb-4, justify"><strong>Update a Fork</strong></p>
+                            <div id="console">
+                                <span>>>> git remote -v</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">git remote -v displays the URLs of the remote repositories linked to the local repository. This provides information about the locations from and to which you can send and receive changes.</p>
+                            <div id="console">
+                                <span>>>> git remote add upstream URL</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">The git remote add upstream URL command is used to add a new remote named "upstream" to your Git repository. The URL specifies the location of the remote repository you want to reference as "upstream." This is commonly used when contributing to open-source projects, where "upstream" refers to the original repository from which your repository was forked.</p>
+                            <div id="console">
+                                <span>>>> git pull upstream main</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">git pull upstream main performs a pull operation from the main branch of the "upstream" remote repository into your current local branch. This updates your local branch with the latest changes from the main branch of the remote repository.</p>
+                            <div id="console">
+                                <span>>>> git commit -am "msg"</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">git commit -am "msg" commits all modified and deleted files automatically, with a commit message specified after the -m option. This command is useful when you have already used git add for the files you want to include in the commit.</p>
+                            <div id="console">
+                                <span>>>> git push origin main</span>
+                            </div>
+                            <p class="fs-5 mb-4, justify">git push origin master sends the changes from the local master branch to the remote repository named origin. This updates the master branch in the remote repository with the changes you made locally.</p>
+                            <p class="fs-5 mb-4, justify">In summary</p>
+                            <div id="console">
+                                <span>>>> git remote add upstream URL</span><br>
+                                <span>>>> git pull upstream main</span><br>
+                                <span>>>> git commit -am "msg"</span><br>
+                                <span>>>> git push origin main</span>
+                            </div>
+
                             <!-- Post Code-->
                             <div class="separator"></div>
 
